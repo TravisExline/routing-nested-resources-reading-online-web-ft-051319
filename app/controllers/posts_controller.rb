@@ -4,7 +4,7 @@ class PostsController < ApplicationController
     if params[:author_id]
       @posts = Author.find(params[:author_id]).posts
     else
-      @posts = Post.a;;
+      @posts = Post.all
   end
 
   def show
